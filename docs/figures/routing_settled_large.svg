@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" font-family="sans-serif" font-size="12">
+<rect width="100%" height="100%" fill="white"/>
+<text x="80" y="24" font-size="15" font-weight="bold">Settled nodes per query (large)</text>
+<line x1="80" x2="550" y1="360.0" y2="360.0" stroke="#ddd"/>
+<text x="74" y="364.0" text-anchor="end">1e+02</text>
+<line x1="80" x2="550" y1="205.0" y2="205.0" stroke="#ddd"/>
+<text x="74" y="209.0" text-anchor="end">1e+03</text>
+<line x1="80" x2="550" y1="50.0" y2="50.0" stroke="#ddd"/>
+<text x="74" y="54.0" text-anchor="end">1e+04</text>
+<line x1="80" x2="550" y1="360" y2="360" stroke="black"/>
+<line x1="80" x2="80" y1="50" y2="360" stroke="black"/>
+<text x="138.8" y="378" text-anchor="middle">balanced</text>
+<text x="256.2" y="378" text-anchor="middle">cargo</text>
+<text x="373.8" y="378" text-anchor="middle">emergency</text>
+<text x="491.2" y="378" text-anchor="middle">safe</text>
+<rect x="91.8" y="98.5" width="29.8" height="261.5" fill="#2f6db3"/>
+<rect x="209.2" y="98.2" width="29.8" height="261.8" fill="#2f6db3"/>
+<rect x="326.8" y="98.1" width="29.8" height="261.9" fill="#2f6db3"/>
+<rect x="444.2" y="99.3" width="29.8" height="260.7" fill="#2f6db3"/>
+<rect x="123.1" y="310.6" width="29.8" height="49.4" fill="#d1495b"/>
+<rect x="240.6" y="306.8" width="29.8" height="53.2" fill="#d1495b"/>
+<rect x="358.1" y="308.7" width="29.8" height="51.3" fill="#d1495b"/>
+<rect x="475.6" y="286.4" width="29.8" height="73.6" fill="#d1495b"/>
+<rect x="154.4" y="293.1" width="29.8" height="66.9" fill="#3c9d5d"/>
+<rect x="271.9" y="285.4" width="29.8" height="74.6" fill="#3c9d5d"/>
+<rect x="389.4" y="294.7" width="29.8" height="65.3" fill="#3c9d5d"/>
+<rect x="506.9" y="297.7" width="29.8" height="62.3" fill="#3c9d5d"/>
+<text x="315.0" y="405" text-anchor="middle">profile</text>
+<text transform="translate(18,205.0) rotate(-90)" text-anchor="middle">avg settled (log)</text>
+<rect x="565" y="50" width="12" height="12" fill="#2f6db3"/>
+<text x="582" y="60">dijkstra</text>
+<rect x="565" y="70" width="12" height="12" fill="#d1495b"/>
+<text x="582" y="80">bidirectional</text>
+<rect x="565" y="90" width="12" height="12" fill="#3c9d5d"/>
+<text x="582" y="100">alt_astar</text>
+</svg>

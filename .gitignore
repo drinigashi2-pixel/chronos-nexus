@@ -1,4 +1,20 @@
 build/
-data/large/
-data/extreme/
+cmake-build-*/
 *.o
+*.a
+gmon.out
+data/*/*.csv
+results/raw/
+results/runs/
+results/*.csv
+!results/.gitkeep
+docs/figures/*.svg
+__pycache__/
+.vscode/
+.idea/
+
+# generated per-run outputs (regenerate with scripts/run_experiments.py)
+results/runs/
+results/check_*/
+results/diag_*/
+README.md.bak

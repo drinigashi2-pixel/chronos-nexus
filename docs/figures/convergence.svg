@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" font-family="sans-serif" font-size="12">
+<rect width="100%" height="100%" fill="white"/>
+<text x="80" y="24" font-size="15" font-weight="bold">ALNS convergence (cycle 0)</text>
+<line x1="80" x2="550" y1="360.0" y2="360.0" stroke="#ddd"/>
+<text x="74" y="364.0" text-anchor="end">0</text>
+<line x1="80" x2="550" y1="298.0" y2="298.0" stroke="#ddd"/>
+<text x="74" y="302.0" text-anchor="end">7.89e+03</text>
+<line x1="80" x2="550" y1="236.0" y2="236.0" stroke="#ddd"/>
+<text x="74" y="240.0" text-anchor="end">1.58e+04</text>
+<line x1="80" x2="550" y1="174.0" y2="174.0" stroke="#ddd"/>
+<text x="74" y="178.0" text-anchor="end">2.37e+04</text>
+<line x1="80" x2="550" y1="112.0" y2="112.0" stroke="#ddd"/>
+<text x="74" y="116.0" text-anchor="end">3.16e+04</text>
+<line x1="80" x2="550" y1="50.0" y2="50.0" stroke="#ddd"/>
+<text x="74" y="54.0" text-anchor="end">3.95e+04</text>
+<line x1="80" x2="550" y1="360" y2="360" stroke="black"/>
+<line x1="80" x2="80" y1="50" y2="360" stroke="black"/>
+<text x="80.0" y="378" text-anchor="middle">1</text>
+<text x="174.0" y="378" text-anchor="middle">24.8</text>
+<text x="268.0" y="378" text-anchor="middle">48.6</text>
+<text x="362.0" y="378" text-anchor="middle">72.4</text>
+<text x="456.0" y="378" text-anchor="middle">96.2</text>
+<text x="550.0" y="378" text-anchor="middle">120</text>
+<path d="M80.0,336.9 L87.9,337.0 L91.8,337.1 L99.7,337.1 L166.9,337.3 L170.8,337.4 L234.0,337.4 L392.0,337.4 L399.9,337.5 L411.8,337.5 L550.0,337.5" fill="none" stroke="#2f6db3" stroke-width="2"/>
+<circle cx="80.0" cy="336.9" r="3" fill="#2f6db3"/>
+<circle cx="87.9" cy="337.0" r="3" fill="#2f6db3"/>
+<circle cx="91.8" cy="337.1" r="3" fill="#2f6db3"/>
+<circle cx="99.7" cy="337.1" r="3" fill="#2f6db3"/>
+<circle cx="166.9" cy="337.3" r="3" fill="#2f6db3"/>
+<circle cx="170.8" cy="337.4" r="3" fill="#2f6db3"/>
+<circle cx="234.0" cy="337.4" r="3" fill="#2f6db3"/>
+<circle cx="392.0" cy="337.4" r="3" fill="#2f6db3"/>
+<circle cx="399.9" cy="337.5" r="3" fill="#2f6db3"/>
+<circle cx="411.8" cy="337.5" r="3" fill="#2f6db3"/>
+<circle cx="550.0" cy="337.5" r="3" fill="#2f6db3"/>
+<path d="M80.0,78.2 L83.9,78.2 L190.6,78.2 L194.5,78.7 L198.5,79.0 L202.4,79.3 L206.4,79.5 L210.3,79.7 L214.3,79.8 L222.2,80.1 L234.0,80.1 L265.6,80.2 L269.6,80.6 L277.5,80.6 L309.1,80.8 L368.3,81.0 L376.2,81.1 L380.2,81.2 L384.1,81.4 L392.0,81.4 L396.0,81.8" fill="none" stroke="#d1495b" stroke-width="2"/>
+<circle cx="80.0" cy="78.2" r="3" fill="#d1495b"/>
+<circle cx="83.9" cy="78.2" r="3" fill="#d1495b"/>
+<circle cx="190.6" cy="78.2" r="3" fill="#d1495b"/>
+<circle cx="194.5" cy="78.7" r="3" fill="#d1495b"/>
+<circle cx="198.5" cy="79.0" r="3" fill="#d1495b"/>
+<circle cx="202.4" cy="79.3" r="3" fill="#d1495b"/>
+<circle cx="206.4" cy="79.5" r="3" fill="#d1495b"/>
+<circle cx="210.3" cy="79.7" r="3" fill="#d1495b"/>
+<circle cx="214.3" cy="79.8" r="3" fill="#d1495b"/>
+<circle cx="222.2" cy="80.1" r="3" fill="#d1495b"/>
+<circle cx="234.0" cy="80.1" r="3" fill="#d1495b"/>
+<circle cx="265.6" cy="80.2" r="3" fill="#d1495b"/>
+<circle cx="269.6" cy="80.6" r="3" fill="#d1495b"/>
+<circle cx="277.5" cy="80.6" r="3" fill="#d1495b"/>
+<circle cx="309.1" cy="80.8" r="3" fill="#d1495b"/>
+<circle cx="368.3" cy="81.0" r="3" fill="#d1495b"/>
+<circle cx="376.2" cy="81.1" r="3" fill="#d1495b"/>
+<circle cx="380.2" cy="81.2" r="3" fill="#d1495b"/>
+<circle cx="384.1" cy="81.4" r="3" fill="#d1495b"/>
+<circle cx="392.0" cy="81.4" r="3" fill="#d1495b"/>
+<circle cx="396.0" cy="81.8" r="3" fill="#d1495b"/>
+<text x="315.0" y="405" text-anchor="middle">iteration</text>
+<text transform="translate(18,205.0) rotate(-90)" text-anchor="middle">objective</text>
+<rect x="565" y="50" width="12" height="12" fill="#2f6db3"/>
+<text x="582" y="60">small best</text>
+<rect x="565" y="70" width="12" height="12" fill="#d1495b"/>
+<text x="582" y="80">medium best</text>
+</svg>
