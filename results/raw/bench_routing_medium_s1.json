@@ -1,0 +1,18 @@
+{
+  "benchmark": "routing",
+  "V": 1000, "E": 16480,
+  "results": [
+    {"profile": "balanced", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 494.90, "avg_ms": 0.11177, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "balanced", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 62.23, "avg_ms": 0.02073, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "balanced", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 29.28, "avg_ms": 0.01768, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 11.730},
+    {"profile": "emergency", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 493.41, "avg_ms": 0.10920, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "emergency", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 64.19, "avg_ms": 0.02089, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "emergency", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 28.64, "avg_ms": 0.01597, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 11.399},
+    {"profile": "cargo", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 511.32, "avg_ms": 0.11214, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "cargo", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 65.56, "avg_ms": 0.02317, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "cargo", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 30.27, "avg_ms": 0.01892, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 11.144},
+    {"profile": "safe", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 500.71, "avg_ms": 0.11499, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "safe", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 96.67, "avg_ms": 0.02963, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "safe", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 24.59, "avg_ms": 0.01350, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 11.460}
+  ]
+}

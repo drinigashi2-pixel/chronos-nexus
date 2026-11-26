@@ -1,0 +1,70 @@
+event_index,time_h,type,target,mode,invalid,created,cancelled,removed,reinserted,unchanged,active,ms,cost_before,cost_after,escalated,note
+0,1.19,NewColony,-1,incremental,0,98,30,0,20,0,375,103.3736,20480.93,99283.85,1,
+1,1.37,ShipFailure,271,incremental,0,0,0,0,0,370,370,0.0285,98865.87,98865.87,0,no plan affected
+2,2.87,RouteUnavailable,2127,incremental,0,0,0,0,0,367,367,0.0191,98767.42,98767.42,0,no plan affected
+3,13.71,RouteDanger,970,incremental,0,19,4,0,19,226,305,24.4859,93621.05,93252.20,0,
+4,21.32,PopulationSurge,272,incremental,0,13,5,0,13,173,246,25.3646,89122.62,82376.34,0,
+5,22.47,NewColony,-1,incremental,0,5,0,0,5,182,227,23.2685,80725.91,74537.56,0,
+6,39.09,ProductionDrop,800,incremental,0,12,1,0,12,300,372,20.5513,27519.99,27947.02,0,
+7,41.29,RouteUnavailable,169,incremental,0,0,0,0,0,341,341,0.0208,26174.39,26174.39,0,no plan affected
+8,55.19,ResourceUnavailable,131,incremental,0,3,1,0,3,505,532,7.7820,43695.37,43735.18,0,
+9,55.22,ShipDestroyed,446,incremental,0,0,0,0,0,531,531,0.0207,43686.37,43686.37,0,no plan affected
+10,55.74,RouteDanger,5987,incremental,0,0,0,0,0,524,524,0.4380,43280.79,43280.79,0,no plan affected
+11,62.66,ShipDestroyed,262,incremental,0,0,0,0,0,435,435,0.0165,37231.79,37231.79,0,no plan affected
+2,63.12,RouteRestore,2127,incremental,0,0,0,0,0,426,426,1.4125,36776.17,36776.17,0,
+12,65.67,ProductionDrop,601,incremental,0,3,0,0,3,384,411,25.2731,35766.60,35877.29,0,
+13,74.76,PopulationSurge,599,incremental,0,7,1,0,7,565,628,21.1269,47786.76,48202.46,0,
+14,75.46,EmergencyMedical,496,incremental,0,1,0,0,1,610,619,11.9733,47553.60,47676.28,0,
+7,88.19,RouteRestore,169,incremental,0,0,0,0,0,439,439,0.8786,34438.71,34438.71,0,
+15,89.89,NewHighPriorityMission,891,incremental,0,1,0,0,1,415,424,20.4791,33400.46,33930.04,0,
+16,97.84,NewHighPriorityMission,953,incremental,0,1,0,0,1,630,639,14.5213,50634.75,50825.56,0,
+17,98.89,ShipFailure,54,incremental,0,0,0,0,0,618,618,0.0222,49401.92,49401.92,0,no plan affected
+18,107.23,RouteDanger,7045,incremental,0,0,0,0,0,501,501,0.0231,39914.60,39914.60,0,no plan affected
+19,113.14,RouteUnavailable,4176,incremental,0,0,0,0,0,429,429,0.0197,34093.00,34093.00,0,no plan affected
+20,114.05,NewColony,-1,incremental,0,6,0,0,6,369,423,24.4039,33449.00,33823.11,0,
+21,120.11,RouteDanger,2099,incremental,0,0,0,0,0,690,690,0.0279,54448.77,54448.77,0,no plan affected
+22,123.28,RouteDanger,9642,incremental,0,4,1,0,4,635,671,19.2838,53346.66,53757.55,0,
+23,125.95,ShipDestroyed,304,incremental,0,0,0,0,0,631,631,0.0215,51216.16,51216.16,0,no plan affected
+24,128.15,WormholeCollapse,9248,incremental,0,0,0,0,0,603,603,0.8853,49134.90,49134.90,0,no plan affected
+25,129.44,ProductionDrop,747,incremental,0,0,0,0,0,585,585,0.1482,48023.53,48023.53,0,no plan affected
+26,135.53,ShipFailure,79,incremental,7,0,0,7,6,443,506,24.8947,42705.57,42494.12,0,
+27,138.21,ShipFailure,371,incremental,0,0,0,0,0,486,486,0.0199,40962.30,40962.30,0,no plan affected
+28,141.59,EmergencyMedical,879,incremental,0,1,0,0,1,444,453,4.6097,38421.40,38761.01,0,
+29,143.33,ResourceUnavailable,685,incremental,0,0,0,0,0,433,433,0.1675,37253.81,37253.81,0,no plan affected
+30,155.06,NewHighPriorityMission,246,incremental,0,1,0,0,1,615,624,5.7123,53114.50,53283.27,0,
+31,162.97,RouteUnavailable,8354,incremental,0,1,0,0,1,514,523,10.0812,47858.66,47943.66,0,
+32,163.76,ShipFailure,361,incremental,0,0,0,0,0,514,514,0.0229,48184.64,48184.64,0,no plan affected
+19,167.98,RouteRestore,4176,incremental,0,0,0,0,0,468,468,1.4365,44485.67,44485.67,0,
+33,174.54,WormholeCollapse,4820,incremental,3,4,2,3,7,688,751,14.1037,131156.30,129726.94,0,
+34,176.88,RouteUnavailable,2653,incremental,0,0,0,0,0,724,724,0.0274,128014.16,128014.16,0,no plan affected
+35,185.03,ResourceUnavailable,537,incremental,0,0,0,0,0,624,624,0.3981,121557.85,121557.85,0,no plan affected
+34,194.12,RouteRestore,2653,incremental,0,0,0,0,0,894,894,1.4423,250378.86,250378.86,0,
+36,194.49,PopulationSurge,22,incremental,0,6,5,0,6,837,891,24.7242,250239.57,249225.44,0,
+37,199.38,ProductionDrop,581,incremental,0,2,0,0,2,818,836,21.4453,244535.10,240883.58,0,
+38,200.76,PirateBlockade,3067,incremental,0,0,0,0,0,823,823,0.0263,240129.64,240129.64,0,no plan affected
+39,222.07,WormholeCollapse,9133,incremental,0,10,3,0,0,850,920,11.9519,319070.94,327743.24,0,
+40,226.34,PirateBlockade,4571,incremental,0,0,0,0,0,875,875,0.0249,323954.95,323954.95,0,no plan affected
+41,226.54,ResourceUnavailable,600,incremental,1,0,0,1,1,863,872,14.8007,323751.69,323760.63,0,
+38,229.37,RouteRestore,3067,incremental,0,0,0,0,0,840,840,0.9230,321253.06,321253.06,0,
+42,230.18,PirateBlockade,7598,incremental,0,0,0,0,0,831,831,0.0216,320405.00,320405.00,0,no plan affected
+43,234.46,ResourceUnavailable,355,incremental,0,2,2,0,2,773,791,21.2425,317493.45,312073.31,0,
+40,246.74,RouteRestore,4571,incremental,0,0,0,0,0,945,945,0.8828,358336.74,358336.74,0,
+42,248.99,RouteRestore,7598,incremental,0,0,0,0,0,918,918,0.0392,356384.26,356384.26,0,
+44,249.29,NewHighPriorityMission,817,incremental,0,1,0,0,1,909,918,18.8799,356368.59,356515.29,0,
+45,260.04,PirateBlockade,3291,incremental,0,0,0,0,0,813,813,0.2408,349161.96,349161.96,0,no plan affected
+46,265.13,NewHighPriorityMission,965,incremental,0,1,0,0,1,1030,1039,12.2966,378151.65,377354.36,0,
+47,265.24,ProductionDrop,16,incremental,0,0,0,0,0,1037,1037,0.0300,376986.22,376986.22,0,no plan affected
+48,269.78,EmergencyMedical,961,incremental,0,1,0,0,1,975,984,12.7286,373550.45,373648.58,0,
+49,273.23,ShipDestroyed,444,incremental,0,0,0,0,0,934,934,0.0238,369997.76,369997.76,0,no plan affected
+50,273.50,EmergencyMedical,999,incremental,0,1,0,0,1,922,931,15.9474,369617.06,369853.03,0,
+45,277.85,RouteRestore,3291,incremental,0,0,0,0,0,875,875,1.2567,365618.74,365618.74,0,
+51,279.03,WormholeCollapse,3074,incremental,0,0,0,0,0,866,866,1.0814,365035.71,365035.71,0,no plan affected
+52,279.83,NewColony,-1,incremental,0,7,0,0,7,802,865,22.4533,364573.99,364002.57,0,
+53,280.01,ShipDestroyed,27,incremental,0,0,0,0,0,859,859,0.0228,363589.07,363589.07,0,no plan affected
+54,284.26,PopulationSurge,379,incremental,0,6,0,0,6,771,825,21.3174,360800.17,359822.31,0,
+55,286.42,WormholeCollapse,9699,incremental,1,2,2,1,0,784,811,11.2127,358718.33,359135.98,0,
+56,288.09,NewColony,-1,incremental,0,12,3,0,0,1012,1084,26.6411,408601.89,416700.09,0,
+57,292.20,EmergencyMedical,921,incremental,0,1,0,0,1,1030,1039,12.6729,413299.67,413438.21,0,
+58,298.83,PirateBlockade,7758,incremental,0,0,0,0,0,966,966,0.3362,408095.05,408095.05,0,no plan affected
+59,301.90,PopulationSurge,968,incremental,0,4,0,0,4,899,935,22.7188,405700.41,403524.15,0,
+58,323.27,RouteRestore,7758,incremental,0,0,0,0,0,970,970,0.8683,428621.46,428621.46,0,

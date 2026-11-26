@@ -1,0 +1,7 @@
+{
+  "benchmark": "flow",
+  "results": [
+    {"method": "min_cost_flow", "transport_cost": 524.792, "shortage_penalty": 0.000, "objective": 524.792, "shortage_units": 0.00, "planned_units": 27265.00, "shipments": 269, "deficits": 246, "supplies": 6510, "arcs": 16471, "phases": 35, "states": 69628, "ms": 16.141},
+    {"method": "greedy", "transport_cost": 502.429, "shortage_penalty": 25581.308, "objective": 26083.738, "shortage_units": 153.29, "planned_units": 27265.00, "shipments": 276, "deficits": 246, "supplies": 6510, "arcs": 0, "phases": 0, "states": 3400, "ms": 1.826}
+  ]
+}

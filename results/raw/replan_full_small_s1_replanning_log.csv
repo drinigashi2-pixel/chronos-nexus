@@ -1,0 +1,28 @@
+event_index,time_h,type,target,mode,invalid,created,cancelled,removed,reinserted,unchanged,active,ms,cost_before,cost_after,escalated,note
+0,5.60,ShipDestroyed,21,full,0,0,0,34,0,0,34,4.2096,2068.24,2047.62,0,no plan affected
+1,11.94,WormholeCollapse,269,full,0,2,0,24,2,0,24,3.7901,1317.48,1461.63,0,
+2,23.82,RouteUnavailable,59,full,0,3,1,18,3,0,18,3.5384,913.66,1160.65,0,
+3,24.49,RouteUnavailable,313,full,1,0,0,55,1,0,55,8.5961,4332.29,4293.67,0,
+4,35.39,NewHighPriorityMission,34,full,0,1,0,43,1,0,43,10.1290,3410.55,4141.12,0,
+5,41.66,ShipFailure,5,full,1,0,0,31,1,0,31,9.8198,2611.59,2702.62,0,
+6,55.35,ShipFailure,24,full,0,0,0,59,0,0,59,9.3820,4695.26,4710.20,0,no plan affected
+7,67.79,PirateBlockade,429,full,0,0,0,48,0,0,48,7.3263,4050.95,4070.90,0,no plan affected
+8,68.64,RouteDanger,38,full,0,0,0,44,0,0,44,8.4319,3681.35,3681.35,0,no plan affected
+9,69.84,PopulationSurge,19,full,0,7,0,50,7,0,50,10.8717,3628.01,4388.11,0,
+2,84.37,RouteRestore,59,full,0,0,0,69,0,0,69,11.0915,6210.33,6199.39,0,
+10,90.78,NewColony,-1,full,0,5,0,69,5,0,69,15.1820,5755.16,5800.04,0,
+7,91.04,RouteRestore,429,full,0,0,0,68,0,0,68,9.4514,5632.71,5730.98,0,
+11,94.78,PopulationSurge,22,full,0,0,0,62,0,0,62,9.4583,5293.80,5373.11,0,no plan affected
+12,103.70,NewColony,-1,full,0,6,0,89,6,0,89,13.6197,6279.84,6750.41,0,
+13,111.08,EmergencyMedical,44,full,0,1,0,79,1,0,79,12.0066,5843.46,6063.25,0,
+14,116.42,NewHighPriorityMission,80,full,0,1,0,71,1,0,71,9.3240,5538.82,6435.42,0,
+15,124.42,RouteDanger,137,full,1,0,0,93,1,0,93,10.3948,8252.31,8287.63,0,
+16,126.40,ResourceUnavailable,94,full,0,0,0,90,0,0,90,10.5528,8100.43,8113.14,0,no plan affected
+17,136.91,ProductionDrop,16,full,0,0,0,74,0,0,74,9.8602,7166.51,7096.48,0,no plan affected
+18,185.72,ProductionDrop,10,full,0,3,1,74,3,0,74,13.5605,5383.30,5512.04,0,
+19,227.92,ResourceUnavailable,16,full,0,0,0,88,0,0,88,15.0117,9811.47,9962.87,0,no plan affected
+20,228.06,PirateBlockade,188,full,1,0,0,84,1,0,84,15.2350,9448.72,9463.58,0,
+20,247.77,RouteRestore,188,full,0,0,0,87,0,0,87,13.0064,8882.77,8810.42,0,
+21,277.13,EmergencyMedical,24,full,0,1,0,69,1,0,69,11.7040,4430.49,5276.37,0,
+22,281.69,ShipDestroyed,23,full,0,0,0,63,0,0,63,10.8943,4316.70,4391.40,0,no plan affected
+23,289.84,WormholeCollapse,269,full,0,0,0,84,0,0,84,13.4423,5343.72,5453.72,0,no plan affected
