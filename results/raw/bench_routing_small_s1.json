@@ -2,17 +2,17 @@
   "benchmark": "routing",
   "V": 100, "E": 855,
   "results": [
-    {"profile": "balanced", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 51.95, "avg_ms": 0.00690, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
-    {"profile": "balanced", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 24.80, "avg_ms": 0.00454, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
-    {"profile": "balanced", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 5.97, "avg_ms": 0.00234, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.647},
-    {"profile": "emergency", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 53.01, "avg_ms": 0.00706, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
-    {"profile": "emergency", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 25.52, "avg_ms": 0.00512, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
-    {"profile": "emergency", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 5.98, "avg_ms": 0.00240, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.997},
-    {"profile": "cargo", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 51.55, "avg_ms": 0.00697, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
-    {"profile": "cargo", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 25.18, "avg_ms": 0.00466, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
-    {"profile": "cargo", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 6.10, "avg_ms": 0.00241, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.766},
-    {"profile": "safe", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 52.95, "avg_ms": 0.00736, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
-    {"profile": "safe", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 30.27, "avg_ms": 0.00534, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
-    {"profile": "safe", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 6.10, "avg_ms": 0.00244, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.645}
+    {"profile": "balanced", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 51.95, "avg_ms": 0.00693, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "balanced", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 24.80, "avg_ms": 0.00488, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "balanced", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 5.97, "avg_ms": 0.00240, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.629},
+    {"profile": "emergency", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 53.01, "avg_ms": 0.00712, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "emergency", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 25.52, "avg_ms": 0.00455, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "emergency", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 5.98, "avg_ms": 0.00264, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.613},
+    {"profile": "cargo", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 51.55, "avg_ms": 0.00707, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "cargo", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 25.18, "avg_ms": 0.00457, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "cargo", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 6.10, "avg_ms": 0.00238, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.626},
+    {"profile": "safe", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 52.95, "avg_ms": 0.00769, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "safe", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 30.27, "avg_ms": 0.00595, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "safe", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 6.10, "avg_ms": 0.00262, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.688}
   ]
 }

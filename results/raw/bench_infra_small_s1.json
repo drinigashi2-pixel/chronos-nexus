@@ -1,15 +1,15 @@
 {
   "benchmark": "infrastructure",
   "results": [
-    {"items": 30, "after_pruning": 21, "budget": 2351.0, "dp_value": 1292.766, "dp_exact": true, "dp_ms": 0.071, "greedy_value": 1292.766, "greedy_ms": 0.011, "greedy_ratio": 1.00000, "bnb_value": 1292.766, "bnb_nodes": 97, "bnb_ms": 0.010},
-    {"items": 314, "after_pruning": 155, "budget": 25094.0, "dp_value": 10230.091, "dp_exact": false, "dp_ms": 1.980, "greedy_value": 10236.322, "greedy_ms": 0.052, "greedy_ratio": 1.00061},
-    {"items": 30, "after_pruning": 21, "budget": 1893.0, "dp_value": 1850.056, "dp_exact": true, "dp_ms": 0.026, "greedy_value": 1850.056, "greedy_ms": 0.008, "greedy_ratio": 1.00000, "bnb_value": 1850.056, "bnb_nodes": 46, "bnb_ms": 0.008},
-    {"items": 314, "after_pruning": 147, "budget": 25647.0, "dp_value": 8798.922, "dp_exact": false, "dp_ms": 1.606, "greedy_value": 8807.271, "greedy_ms": 0.045, "greedy_ratio": 1.00095},
-    {"items": 30, "after_pruning": 25, "budget": 2207.0, "dp_value": 1817.665, "dp_exact": true, "dp_ms": 0.034, "greedy_value": 1817.665, "greedy_ms": 0.009, "greedy_ratio": 1.00000, "bnb_value": 1817.665, "bnb_nodes": 40, "bnb_ms": 0.008},
-    {"items": 314, "after_pruning": 151, "budget": 25334.0, "dp_value": 9429.060, "dp_exact": false, "dp_ms": 1.136, "greedy_value": 9433.119, "greedy_ms": 0.049, "greedy_ratio": 1.00043},
-    {"items": 30, "after_pruning": 24, "budget": 2209.0, "dp_value": 1660.720, "dp_exact": true, "dp_ms": 0.033, "greedy_value": 1657.572, "greedy_ms": 0.009, "greedy_ratio": 0.99810, "bnb_value": 1660.720, "bnb_nodes": 119, "bnb_ms": 0.009},
-    {"items": 314, "after_pruning": 156, "budget": 24942.0, "dp_value": 10384.499, "dp_exact": false, "dp_ms": 1.196, "greedy_value": 10390.722, "greedy_ms": 0.047, "greedy_ratio": 1.00060},
+    {"items": 30, "after_pruning": 21, "budget": 2351.0, "dp_value": 1292.766, "dp_exact": true, "dp_ms": 0.062, "greedy_value": 1292.766, "greedy_ms": 0.011, "greedy_ratio": 1.00000, "bnb_value": 1292.766, "bnb_nodes": 97, "bnb_ms": 0.011},
+    {"items": 314, "after_pruning": 155, "budget": 25094.0, "dp_value": 10230.091, "dp_exact": false, "dp_ms": 2.104, "greedy_value": 10236.322, "greedy_ms": 0.052, "greedy_ratio": 1.00061},
+    {"items": 30, "after_pruning": 21, "budget": 1893.0, "dp_value": 1850.056, "dp_exact": true, "dp_ms": 0.027, "greedy_value": 1850.056, "greedy_ms": 0.008, "greedy_ratio": 1.00000, "bnb_value": 1850.056, "bnb_nodes": 46, "bnb_ms": 0.008},
+    {"items": 314, "after_pruning": 147, "budget": 25647.0, "dp_value": 8798.922, "dp_exact": false, "dp_ms": 1.593, "greedy_value": 8807.271, "greedy_ms": 0.042, "greedy_ratio": 1.00095},
+    {"items": 30, "after_pruning": 25, "budget": 2207.0, "dp_value": 1817.665, "dp_exact": true, "dp_ms": 0.034, "greedy_value": 1817.665, "greedy_ms": 0.009, "greedy_ratio": 1.00000, "bnb_value": 1817.665, "bnb_nodes": 40, "bnb_ms": 0.007},
+    {"items": 314, "after_pruning": 151, "budget": 25334.0, "dp_value": 9429.060, "dp_exact": false, "dp_ms": 1.155, "greedy_value": 9433.119, "greedy_ms": 0.049, "greedy_ratio": 1.00043},
+    {"items": 30, "after_pruning": 24, "budget": 2209.0, "dp_value": 1660.720, "dp_exact": true, "dp_ms": 0.033, "greedy_value": 1657.572, "greedy_ms": 0.009, "greedy_ratio": 0.99810, "bnb_value": 1660.720, "bnb_nodes": 119, "bnb_ms": 0.010},
+    {"items": 314, "after_pruning": 156, "budget": 24942.0, "dp_value": 10384.499, "dp_exact": false, "dp_ms": 1.275, "greedy_value": 10390.722, "greedy_ms": 0.050, "greedy_ratio": 1.00060},
     {"items": 30, "after_pruning": 22, "budget": 2381.0, "dp_value": 1322.082, "dp_exact": true, "dp_ms": 0.032, "greedy_value": 1322.082, "greedy_ms": 0.009, "greedy_ratio": 1.00000, "bnb_value": 1322.082, "bnb_nodes": 56, "bnb_ms": 0.008},
-    {"items": 314, "after_pruning": 152, "budget": 24452.0, "dp_value": 9344.860, "dp_exact": false, "dp_ms": 1.154, "greedy_value": 9355.038, "greedy_ms": 0.045, "greedy_ratio": 1.00109}
+    {"items": 314, "after_pruning": 152, "budget": 24452.0, "dp_value": 9344.860, "dp_exact": false, "dp_ms": 1.158, "greedy_value": 9355.038, "greedy_ms": 0.044, "greedy_ratio": 1.00109}
   ]
 }

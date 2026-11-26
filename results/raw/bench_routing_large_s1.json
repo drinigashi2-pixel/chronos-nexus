@@ -2,17 +2,17 @@
   "benchmark": "routing",
   "V": 10000, "E": 164795,
   "results": [
-    {"profile": "balanced", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 4864.15, "avg_ms": 1.50517, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
-    {"profile": "balanced", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 208.44, "avg_ms": 0.09274, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
-    {"profile": "balanced", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 270.18, "avg_ms": 0.21604, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 195.758},
-    {"profile": "emergency", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 4897.35, "avg_ms": 1.50872, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
-    {"profile": "emergency", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 214.35, "avg_ms": 0.10831, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
-    {"profile": "emergency", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 263.82, "avg_ms": 0.19004, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 195.885},
-    {"profile": "cargo", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 4885.44, "avg_ms": 1.58025, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
-    {"profile": "cargo", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 220.28, "avg_ms": 0.11793, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
-    {"profile": "cargo", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 302.81, "avg_ms": 0.24981, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 195.330},
-    {"profile": "safe", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 4809.10, "avg_ms": 1.59801, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
-    {"profile": "safe", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 298.41, "avg_ms": 0.12144, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
-    {"profile": "safe", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 252.17, "avg_ms": 0.15882, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 202.414}
+    {"profile": "balanced", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 4864.15, "avg_ms": 1.58336, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "balanced", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 208.44, "avg_ms": 0.08852, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "balanced", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 270.18, "avg_ms": 0.20953, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 213.664},
+    {"profile": "emergency", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 4897.35, "avg_ms": 1.60014, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "emergency", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 214.35, "avg_ms": 0.09213, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "emergency", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 263.82, "avg_ms": 0.19540, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 212.290},
+    {"profile": "cargo", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 4885.44, "avg_ms": 1.70967, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "cargo", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 220.28, "avg_ms": 0.10996, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "cargo", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 302.81, "avg_ms": 0.24481, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 211.551},
+    {"profile": "safe", "algorithm": "dijkstra", "queries": 200, "found": 200, "avg_settled": 4809.10, "avg_ms": 1.69246, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "safe", "algorithm": "bidirectional", "queries": 200, "found": 200, "avg_settled": 298.41, "avg_ms": 0.11550, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 0.000},
+    {"profile": "safe", "algorithm": "alt_astar", "queries": 200, "found": 200, "avg_settled": 252.17, "avg_ms": 0.16314, "cost_mismatches_vs_dijkstra": 0, "landmark_build_ms": 209.350}
   ]
 }

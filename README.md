@@ -643,7 +643,7 @@ output reserve is left, then writes the incumbent. The memory guard clears the r
 | Dijkstra | O(1) (s=t) | 500 settled/query (medium) | O((n+m) log n) | O(n) |
 | Bidirectional Dijkstra | O(1) | 72 settled/query (medium) | O((n+m) log n) | O(n) |
 | ALT build | — | — | O(L (n+m) log n) | O(L n) per profile |
-| ALT A\* query | O(L) | 28 settled/query (medium), 272 (large) | O(L (n+m) log n) (reopenings bounded by labels) | O(n) |
+| ALT A\* query | O(L) | 28 settled/query (medium) | O(L (n+m) log n) (reopenings bounded by labels) | O(n) |
 | Fuel-constrained labels | O(1) | — | O(B (n+m) log(Bn)) | O(B n) |
 | ε-Pareto labels | O(1) | — | O(Lmax (n+m) log(Lmax n)) | O(Lmax n) |
 | Cache lookup / invalidation | O(1) | O(1) | O(#keys on edge) | O(cached path lengths) |
@@ -651,7 +651,7 @@ output reserve is left, then writes the incumbent. The memory guard clears the r
 | Network build (reduced) | O(D) | — | O(D · settleLimit log) | O(D K) |
 | Potential repair (Bellman–Ford) | O(m') | — | O(C n' m'), C = cycles cancelled | O(n') |
 | Regret-k insertion | O(M K P ℓ) | — | O(M K P ℓ + M log M + updates) | O(M K) |
-| ALNS iteration | O(q K P ℓ) | small 1216 it/s, medium 138 it/s, large 87 it/s | O(q² K P ℓ) (Shaw sampling) | O(touched ℓ) |
+| ALNS iteration | O(q K P ℓ) | small 1411 it/s, medium 132 it/s, large 83 it/s | O(q² K P ℓ) (Shaw sampling) | O(touched ℓ) |
 | Local search pass | O(M K ℓ) | — | O(M K ℓ²) | O(ℓ) |
 | GA generation | O(pop M K ℓ) | — | same | O(pop M) |
 | Exact B&B | O(M) | 65 nodes mean (infra B&B, max 119) | O((S·M + 1)^M) | O(M) depth |
@@ -661,8 +661,8 @@ output reserve is left, then writes the incumbent. The memory guard clears the r
 | Infra B&B | O(n) | — | O(2^n · n) | O(n) |
 | Predictor rebuild / update / query | O(nR log) / O(R log) / O(k log) | — | same | O(nR) |
 | Dependency invalid set | O(1) | O(\|affected entries\|) | O(entries) | O(Σ plan lengths) |
-| Incremental re-plan | O(\|I\|) | ms/event: small 0.83, medium 8.63, large 61.72, extreme 238.37 | O(M K P ℓ) on escalation | O(\|N\|) |
-| Simulation cycle | — | mean planning ms/cycle: small 36 ms, medium 421 ms, large 3699 ms, extreme 44,802 ms | O(nR + alloc + sched + E_events·replan) | O(n + m + M) |
+| Incremental re-plan | O(\|I\|) | ms/event: small 0.85, medium 9.51, large 63.10, extreme 240.06 | O(M K P ℓ) on escalation | O(\|N\|) |
+| Simulation cycle | — | mean planning ms/cycle: small 38 ms, medium 450 ms, large 3891 ms, extreme 45,166 ms | O(nR + alloc + sched + E_events·replan) | O(n + m + M) |
 
 The worst cases of the heuristics are bounded in practice by the time boxes and iteration budgets;
 the observed column must be filled from the measurements, never from the theoretical bounds.
@@ -800,10 +800,10 @@ Score = 100·[0.30 PS + 0.20 RS + 0.18 MS + 0.12 EG + 0.10 SP + 0.10 TE]
 <!-- AUTO:scaling -->
 | size | score | survival | completed | failed | states | naive states | reduction % | avg re-plan ms | time ms | peak MB |
 |---|---|---|---|---|---|---|---|---|---|---|
-| small | 70.65 (69.58–71.40) | 0.9996 | 454 | 33 | 6.17M | 8.59M | 28.26 (25.77–30.03) | 0.83 | 698 (677–737) | 16.2 |
-| medium | 70.11 (69.86–70.32) | 0.9996 | 5206 | 289 | 11.89M | 252.30M | 95.28 (95.18–95.47) | 8.63 | 7110 (6570–7538) | 60.9 |
-| large | 69.10 (68.98–69.20) | 0.9988 | 53,650 | 3671 | 142.55M | 14.25G | 99.00 (98.95–99.07) | 61.72 | 66,104 (62,772–69,834) | 311.3 |
-| extreme | 64.04 (63.81–64.23) | 0.9964 | 87,137 | 13,676 | 1.34G | 345.02G | 99.61 (99.60–99.62) | 238.37 | 794,638 (790,361–798,577) | 1289.3 |
+| small | 70.65 (69.59–71.41) | 0.9996 | 454 | 33 | 6.17M | 8.59M | 28.26 (25.77–30.03) | 0.85 | 602 (578–618) | 16.4 |
+| medium | 70.10 (69.84–70.31) | 0.9996 | 5206 | 289 | 11.89M | 252.30M | 95.28 (95.18–95.47) | 9.51 | 7465 (6451–8441) | 60.8 |
+| large | 69.07 (69.06–69.07) | 0.9988 | 53,584 | 3661 | 141.75M | 14.14G | 99.00 (98.94–99.07) | 63.10 | 69,373 (66,897–71,259) | 303.9 |
+| extreme | 63.81 (63.71–63.92) | 0.9963 | 82,183 | 13,483 | 1.14G | 324.13G | 99.65 (99.64–99.65) | 240.06 | 812,045 (801,882–817,769) | 1268.1 |
 <!-- /AUTO:scaling -->
 
 Figures: `docs/figures/runtime_vs_size.svg`, `memory_vs_size.svg`, `states_naive_vs_pruned.svg`.
@@ -813,11 +813,11 @@ Figures: `docs/figures/runtime_vs_size.svg`, `memory_vs_size.svg`, `states_naive
 <!-- AUTO:stats -->
 | statistic | small | medium | large | extreme |
 |---|---|---|---|---|
-| resources delivered / shortages / waste | 51,661 / 298 / 3095 | 589,035 / 2564 / 34,306 | 5.86M / 32,355 / 311,830 | 23.18M / 2.07M / 1.73M |
-| total distance / fuel / transport cost / risk | 18,826 / 14,864 / 27,867 / 14 | 165,948 / 138,434 / 273,415 / 244 | 2.10M / 1.73M / 3.54M / 2725 | 6.84M / 5.48M / 10.38M / 4751 |
-| nodes explored / candidates evaluated | 139,720 / 877,845 | 7.00M / 4.24M | 127.03M / 7.17M | 1.23G / 35.61M |
+| resources delivered / shortages / waste | 51,661 / 298 / 3095 | 589,035 / 2564 / 34,306 | 5.87M / 32,616 / 311,123 | 22.51M / 2.12M / 1.71M |
+| total distance / fuel / transport cost / risk | 18,826 / 14,864 / 27,867 / 14 | 165,948 / 138,434 / 273,415 / 244 | 2.10M / 1.72M / 3.54M / 2717 | 6.65M / 5.33M / 10.05M / 4525 |
+| nodes explored / candidates evaluated | 139,720 / 877,845 | 7.00M / 4.24M | 126.51M / 7.17M | 1.03G / 33.66M |
 | events handled | 24 | 60 | 156 | 408 |
-| missions on time / expired | 429 / 18 | 5051 / 61 | 51,881 / 880 | 77,788 / 8966 |
+| missions on time / expired | 429 / 18 | 5051 / 61 | 51,822 / 879 | 72,789 / 9009 |
 | hard constraint violations | 0 | 0 | 0 | 0 |
 <!-- /AUTO:stats -->
 
@@ -826,10 +826,10 @@ Figures: `docs/figures/runtime_vs_size.svg`, `memory_vs_size.svg`, `states_naive
 <!-- AUTO:replan -->
 | size | mode | avg ms/event | max ms | mean invalid | mean unchanged % | score |
 |---|---|---|---|---|---|---|
-| small | incremental | 0.858 | 4.69 | 0.2 | 81.4 | 70.66 (69.59–71.41) |
-| small | full | 9.993 | 14.64 | 0.2 | 0.0 | 71.08 (70.77–71.71) |
-| medium | incremental | 10.784 | 137.14 | 0.8 | 94.2 | 70.08 (69.78–70.31) |
-| medium | full | 71.955 | 288.69 | 0.6 | 0.0 | 70.04 (69.90–70.14) |
+| small | incremental | 1.033 | 6.40 | 0.2 | 81.4 | 70.65 (69.59–71.41) |
+| small | full | 11.452 | 18.16 | 0.2 | 0.0 | 71.07 (70.76–71.70) |
+| medium | incremental | 12.864 | 172.69 | 0.8 | 94.2 | 70.05 (69.77–70.28) |
+| medium | full | 83.889 | 337.70 | 0.6 | 0.0 | 69.99 (69.87–70.13) |
 <!-- /AUTO:replan -->
 
 Figure: `docs/figures/replan_time_per_event.svg`.
@@ -841,8 +841,8 @@ Figure: `docs/figures/replan_time_per_event.svg`.
 |---|---|---|---|
 | regret + ALNS + LS | 0.08 | 1.22 | 1.51 |
 | greedy | 2.62 | 19.85 | 0.00 |
-| GA | 0.19 | 1.22 | 2.30 |
-| SA | 0.08 | 1.22 | 0.70 |
+| GA | 0.19 | 1.22 | 2.27 |
+| SA | 0.08 | 1.22 | 0.66 |
 | B&B (reference) | 0.00 | 0.00 | 0.12 |
 
 B&B proved optimality on 15 of 15 instances.
@@ -855,13 +855,13 @@ Figures: `docs/figures/optimality_gap.svg`, `convergence.svg`.
 <!-- AUTO:compare -->
 | comparison | metric | result |
 |---|---|---|
-| ALT A\* vs bidirectional vs Dijkstra | avg settled / ms per query, exactness | large (V=10000): alt_astar 272 settled / 0.204 ms, bidirectional 235 settled / 0.110 ms, dijkstra 4864 settled / 1.548 ms; medium (V=1000): alt_astar 28 settled / 0.017 ms, bidirectional 72 settled / 0.024 ms, dijkstra 500 settled / 0.112 ms; small (V=100): alt_astar 6 settled / 0.002 ms, bidirectional 26 settled / 0.005 ms, dijkstra 52 settled / 0.007 ms; 0 cost mismatches vs Dijkstra |
-| MCF vs greedy allocation | objective, shortage units, ms | large: objective MCF 6218.4 vs greedy 289,584, shortage units 0.0 vs 1684.2, 503.9 vs 27.2 ms; medium: objective MCF 524.8 vs greedy 26,084, shortage units 0.0 vs 153.3, 16.1 vs 1.8 ms; small: objective MCF 66.7 vs greedy 5985.6, shortage units 0.0 vs 24.9, 0.7 vs 0.1 ms |
-| DP vs hull greedy vs B&B (infra) | value ratio, ms | large: greedy/DP value ratio 1.0004 (min 0.9962); DP = B&B on 5 of 5; DP 1.53 ms, greedy 0.19 ms; medium: greedy/DP value ratio 1.0009 (min 1.0000); DP = B&B on 5 of 5; DP 1.57 ms, greedy 0.13 ms; small: greedy/DP value ratio 1.0002 (min 0.9981); DP = B&B on 5 of 5; DP 0.73 ms, greedy 0.03 ms |
-| GA vs ALNS (scheduler) | score, completed, time | small: score 70.19 vs 70.65, completed 469.00 vs 453.67, exec_ms 3762.05 vs 592.04; medium: score 69.53 vs 70.11, completed 5414.33 vs 5206.33, exec_ms 18,156 vs 7064.00 |
-| hybrid ablation | score change per removed stage | small (full 70.66): −regret +0.20, −ALNS -0.07, −local search +0.22, −repair -0.00; medium (full 70.12): −regret -0.07, −ALNS +0.13, −local search -0.03, −repair +0.00 |
-| pruning on/off | states, time, score | small: states_explored 6.17M vs 9.11M, exec_ms 712.94 vs 2307.86, score 70.65 vs 71.06; medium: states_explored 11.89M vs 62.68M, exec_ms 7356.72 vs 15,083, score 70.11 vs 45.76 |
-| worst-case behaviour | max re-plan ms, max cycle ms, escalations | small: max re-plan 5.8 ms, max cycle 49 ms, 4 escalations; medium: max re-plan 119.3 ms, max cycle 655 ms, 5 escalations; large: max re-plan 876.8 ms, max cycle 5529 ms, 8 escalations; extreme: max re-plan 4864.3 ms, max cycle 63,201 ms, 3 escalations |
+| ALT A\* vs bidirectional vs Dijkstra | avg settled / ms per query, exactness | large (V=10000): alt_astar 272 settled / 0.203 ms, bidirectional 235 settled / 0.102 ms, dijkstra 4864 settled / 1.646 ms; medium (V=1000): alt_astar 28 settled / 0.016 ms, bidirectional 72 settled / 0.023 ms, dijkstra 500 settled / 0.110 ms; small (V=100): alt_astar 6 settled / 0.003 ms, bidirectional 26 settled / 0.005 ms, dijkstra 52 settled / 0.007 ms; 0 cost mismatches vs Dijkstra |
+| MCF vs greedy allocation | objective, shortage units, ms | large: objective MCF 6218.4 vs greedy 289,584, shortage units 0.0 vs 1684.2, 519.3 vs 32.0 ms; medium: objective MCF 524.8 vs greedy 26,084, shortage units 0.0 vs 153.3, 15.3 vs 1.7 ms; small: objective MCF 66.7 vs greedy 5985.6, shortage units 0.0 vs 24.9, 0.7 vs 0.1 ms |
+| DP vs hull greedy vs B&B (infra) | value ratio, ms | large: greedy/DP value ratio 1.0004 (min 0.9962); DP = B&B on 5 of 5; DP 1.58 ms, greedy 0.16 ms; medium: greedy/DP value ratio 1.0009 (min 1.0000); DP = B&B on 5 of 5; DP 1.54 ms, greedy 0.14 ms; small: greedy/DP value ratio 1.0002 (min 0.9981); DP = B&B on 5 of 5; DP 0.75 ms, greedy 0.03 ms |
+| GA vs ALNS (scheduler) | score, completed, time | small: score 70.15 vs 70.64, completed 469.00 vs 453.67, exec_ms 4372.62 vs 728.85; medium: score 69.45 vs 70.09, completed 5414.33 vs 5206.33, exec_ms 21,440 vs 8198.70 |
+| hybrid ablation | score change per removed stage | small (full 70.65): −regret +0.21, −ALNS -0.07, −local search +0.22, −repair -0.00; medium (full 70.09): −regret -0.06, −ALNS +0.14, −local search -0.03, −repair -0.01 |
+| pruning on/off | states, time, score | small: states_explored 6.17M vs 9.11M, exec_ms 716.76 vs 2547.63, score 70.64 vs 71.04; medium: states_explored 11.89M vs 62.68M, exec_ms 8546.67 vs 15,594, score 70.08 vs 45.75 |
+| worst-case behaviour | max re-plan ms, max cycle ms, escalations | small: max re-plan 5.8 ms, max cycle 63 ms, 4 escalations; medium: max re-plan 121.9 ms, max cycle 761 ms, 5 escalations; large: max re-plan 873.7 ms, max cycle 7449 ms, 8 escalations; extreme: max re-plan 4239.0 ms, max cycle 63,236 ms, 3 escalations |
 <!-- /AUTO:compare -->
 
 **Scalability.** Each size step multiplies planets, routes and missions by 10. Runtime grows by
@@ -882,9 +882,9 @@ insertion with ALNS on small and medium, greedy insertion with pruned candidates
 on large and extreme (`cycles.csv`, column `reason`), and bidirectional search instead of ALT on
 large, where it settles fewer nodes per query (235 vs 272) and is twice as fast (0.11 vs 0.20 ms).
 
-Quality degrades gently with size: 70.7 (small), 70.1 (medium), 69.1 (large) and 64.0 (extreme).
+Quality degrades gently with size: 70.7 (small), 70.1 (medium), 69.1 (large) and 63.8 (extreme).
 Survival stays at or above 0.996 and hard-constraint violations stay at 0 at every size. The drop
-on extreme is mission throughput: about 9 % of the missions expire (8,966) and 13,676 fail,
+on extreme is mission throughput: about 9 % of the missions expire (9,009) and 13,483 fail,
 against 1–2 % expired on large, because one planning cycle cannot evaluate every waiting mission
 within its share of the budget (see §16).
 
@@ -893,13 +893,13 @@ Comparisons worth noting from the table above:
 * **Pruning** is what makes medium feasible: without it the run explores 5.3× more states, takes
   twice as long and the score falls from 70.1 to 45.8, because the planner runs out of its per-cycle
   work before most missions are placed. On small, where everything fits anyway, pruning only saves
-  time (0.7 s vs 2.3 s; score 70.7 vs 71.1, within the seed spread).
+  time (0.7 s vs 2.5 s; score 70.6 vs 71.0, within the seed spread).
 * **ALNS vs GA**: GA completes slightly more missions (5,414 vs 5,206 on medium) but scores lower
   (69.5 vs 70.1) at 2.6× the runtime, because it trades on-time delivery and transport cost for
   coverage.
-* **Incremental vs full re-planning**: incremental re-planning is 7–12× faster per event (medium:
-  10.8 vs 72.0 ms average, 137 vs 289 ms maximum) and keeps 94 % of the plan unchanged, at the same
-  score (70.08 vs 70.04 on medium; on small full re-planning is 0.4 points higher, inside the seed
+* **Incremental vs full re-planning**: incremental re-planning is 6–11× faster per event (medium:
+  12.9 vs 83.9 ms average, 173 vs 338 ms maximum) and keeps 94 % of the plan unchanged, at the same
+  score (70.05 vs 69.99 on medium; on small full re-planning is 0.4 points higher, inside the seed
   spread).
 * **Ablation**: removing any single stage of the hybrid (regret, ALNS, local search, repair)
   changes the score by at most ±0.2 points on small and medium, which is within the seed-to-seed
@@ -938,7 +938,11 @@ Comparisons worth noting from the table above:
   removed that, which cut failed missions by 2.6k per run but left the score unchanged, because the
   scheduler then spends ~100 s more of its time. One-to-many reverse trees for the empty legs were
   tried and rejected (large: 65.4 → 64.1, one reverse search out to the farthest of K candidates
-  settles more than K point-to-point searches).
+  settles more than K point-to-point searches). Multi-threaded route prefetch (8 worker threads
+  computing the next 256 missions' legs into the cache) was also tried and rejected: it evaluated
+  13× more insertions per cycle on extreme, but the full run scored the same (63.61 vs 63.69) and
+  took more time and 250 MB more memory, because after routing the main thread is limited by
+  insertion evaluation, event repair and allocation. The planner therefore stays single-threaded.
 * **Flow-repair churn.** Repair can shift flow between equivalent arcs. The diff policy cancels
   and creates only the difference, but some churn remains.
 * **Landmark quality.** New edges and reopened routes are repaired in place, so tables no longer go
@@ -961,7 +965,7 @@ The system decomposes the civilization problem into components with clear interf
 The meta layer chooses among them using the instance features and the remaining budget.
 Measured on the hardware of §13, over 3 seeds per size:
 
-* **Quality.** Scores of 70.7 / 70.1 / 69.1 / 64.0 from small to extreme, survival ≥ 0.996 and 0
+* **Quality.** Scores of 70.7 / 70.1 / 69.1 / 63.8 from small to extreme, survival ≥ 0.996 and 0
   hard-constraint violations everywhere. On small and medium this is within a few points of what
   the data and the score formula allow (§12: growth and science are bounded by the facilities and
   the budget, and transport cost by the safety-weighted route profiles).
@@ -970,7 +974,7 @@ Measured on the hardware of §13, over 3 seeds per size:
 * **Exactness where claimed.** Routing has 0 cost mismatches against Dijkstra on all sizes, MCF
   and DP/B&B match their brute-force references in the tests, and the scheduling heuristics stay
   within 0.08 % on average (max 1.22 %) of the proven B&B optimum on small instances.
-* **Dynamic re-planning.** Incremental re-planning is 7–12× faster per event than a full re-solve
+* **Dynamic re-planning.** Incremental re-planning is 6–11× faster per event than a full re-solve
   and keeps 94 % of the plan, at the same quality.
 * **Scalability.** Runtime grows close to linearly with instance size, memory stays below 16 % of
   the budget, and every size finishes inside its time limit, also at a fraction of it (§18, time

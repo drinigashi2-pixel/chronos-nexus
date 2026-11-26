@@ -1,15 +1,15 @@
 {
   "benchmark": "infrastructure",
   "results": [
-    {"items": 30, "after_pruning": 28, "budget": 1937.0, "dp_value": 2202.959, "dp_exact": true, "dp_ms": 0.039, "greedy_value": 2200.635, "greedy_ms": 0.022, "greedy_ratio": 0.99895, "bnb_value": 2202.959, "bnb_nodes": 111, "bnb_ms": 0.011},
-    {"items": 400, "after_pruning": 338, "budget": 31495.0, "dp_value": 26218.821, "dp_exact": false, "dp_ms": 4.502, "greedy_value": 26273.413, "greedy_ms": 0.250, "greedy_ratio": 1.00208},
-    {"items": 30, "after_pruning": 23, "budget": 2274.0, "dp_value": 2949.816, "dp_exact": true, "dp_ms": 0.062, "greedy_value": 2949.816, "greedy_ms": 0.011, "greedy_ratio": 1.00000, "bnb_value": 2949.816, "bnb_nodes": 38, "bnb_ms": 0.007},
-    {"items": 400, "after_pruning": 326, "budget": 31478.0, "dp_value": 23983.260, "dp_exact": false, "dp_ms": 2.706, "greedy_value": 24041.399, "greedy_ms": 0.238, "greedy_ratio": 1.00242},
-    {"items": 30, "after_pruning": 26, "budget": 2211.0, "dp_value": 1729.825, "dp_exact": true, "dp_ms": 0.037, "greedy_value": 1729.825, "greedy_ms": 0.014, "greedy_ratio": 1.00000, "bnb_value": 1729.825, "bnb_nodes": 53, "bnb_ms": 0.008},
-    {"items": 400, "after_pruning": 333, "budget": 32254.0, "dp_value": 24695.693, "dp_exact": false, "dp_ms": 2.505, "greedy_value": 24745.467, "greedy_ms": 0.663, "greedy_ratio": 1.00202},
-    {"items": 30, "after_pruning": 28, "budget": 2407.0, "dp_value": 1954.264, "dp_exact": true, "dp_ms": 0.047, "greedy_value": 1946.818, "greedy_ms": 0.018, "greedy_ratio": 0.99619, "bnb_value": 1954.264, "bnb_nodes": 112, "bnb_ms": 0.012},
-    {"items": 400, "after_pruning": 334, "budget": 31517.0, "dp_value": 30309.449, "dp_exact": false, "dp_ms": 2.746, "greedy_value": 30364.493, "greedy_ms": 0.323, "greedy_ratio": 1.00182},
-    {"items": 30, "after_pruning": 27, "budget": 2381.0, "dp_value": 1833.623, "dp_exact": true, "dp_ms": 0.061, "greedy_value": 1831.084, "greedy_ms": 0.015, "greedy_ratio": 0.99861, "bnb_value": 1833.623, "bnb_nodes": 60, "bnb_ms": 0.009},
-    {"items": 400, "after_pruning": 339, "budget": 30293.0, "dp_value": 26362.436, "dp_exact": false, "dp_ms": 2.602, "greedy_value": 26416.536, "greedy_ms": 0.380, "greedy_ratio": 1.00205}
+    {"items": 30, "after_pruning": 28, "budget": 1937.0, "dp_value": 2202.959, "dp_exact": true, "dp_ms": 0.046, "greedy_value": 2200.635, "greedy_ms": 0.022, "greedy_ratio": 0.99895, "bnb_value": 2202.959, "bnb_nodes": 111, "bnb_ms": 0.011},
+    {"items": 400, "after_pruning": 338, "budget": 31495.0, "dp_value": 26218.821, "dp_exact": false, "dp_ms": 4.631, "greedy_value": 26273.413, "greedy_ms": 0.266, "greedy_ratio": 1.00208},
+    {"items": 30, "after_pruning": 23, "budget": 2274.0, "dp_value": 2949.816, "dp_exact": true, "dp_ms": 0.037, "greedy_value": 2949.816, "greedy_ms": 0.011, "greedy_ratio": 1.00000, "bnb_value": 2949.816, "bnb_nodes": 38, "bnb_ms": 0.008},
+    {"items": 400, "after_pruning": 326, "budget": 31478.0, "dp_value": 23983.260, "dp_exact": false, "dp_ms": 2.619, "greedy_value": 24041.399, "greedy_ms": 0.248, "greedy_ratio": 1.00242},
+    {"items": 30, "after_pruning": 26, "budget": 2211.0, "dp_value": 1729.825, "dp_exact": true, "dp_ms": 0.039, "greedy_value": 1729.825, "greedy_ms": 0.014, "greedy_ratio": 1.00000, "bnb_value": 1729.825, "bnb_nodes": 53, "bnb_ms": 0.010},
+    {"items": 400, "after_pruning": 333, "budget": 32254.0, "dp_value": 24695.693, "dp_exact": false, "dp_ms": 2.665, "greedy_value": 24745.467, "greedy_ms": 0.321, "greedy_ratio": 1.00202},
+    {"items": 30, "after_pruning": 28, "budget": 2407.0, "dp_value": 1954.264, "dp_exact": true, "dp_ms": 0.045, "greedy_value": 1946.818, "greedy_ms": 0.017, "greedy_ratio": 0.99619, "bnb_value": 1954.264, "bnb_nodes": 112, "bnb_ms": 0.012},
+    {"items": 400, "after_pruning": 334, "budget": 31517.0, "dp_value": 30309.449, "dp_exact": false, "dp_ms": 2.645, "greedy_value": 30364.493, "greedy_ms": 0.333, "greedy_ratio": 1.00182},
+    {"items": 30, "after_pruning": 27, "budget": 2381.0, "dp_value": 1833.623, "dp_exact": true, "dp_ms": 0.042, "greedy_value": 1831.084, "greedy_ms": 0.016, "greedy_ratio": 0.99861, "bnb_value": 1833.623, "bnb_nodes": 60, "bnb_ms": 0.009},
+    {"items": 400, "after_pruning": 339, "budget": 30293.0, "dp_value": 26362.436, "dp_exact": false, "dp_ms": 3.050, "greedy_value": 26416.536, "greedy_ms": 0.389, "greedy_ratio": 1.00205}
   ]
 }

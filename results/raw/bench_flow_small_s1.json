@@ -1,7 +1,7 @@
 {
   "benchmark": "flow",
   "results": [
-    {"method": "min_cost_flow", "transport_cost": 66.722, "shortage_penalty": 0.000, "objective": 66.722, "shortage_units": 0.00, "planned_units": 3203.00, "shipments": 31, "deficits": 30, "supplies": 646, "arcs": 1719, "phases": 20, "states": 3350, "ms": 0.708},
-    {"method": "greedy", "transport_cost": 66.662, "shortage_penalty": 5918.963, "objective": 5985.626, "shortage_units": 24.93, "planned_units": 3203.00, "shipments": 31, "deficits": 30, "supplies": 646, "arcs": 0, "phases": 0, "states": 417, "ms": 0.132}
+    {"method": "min_cost_flow", "transport_cost": 66.722, "shortage_penalty": 0.000, "objective": 66.722, "shortage_units": 0.00, "planned_units": 3203.00, "shipments": 31, "deficits": 30, "supplies": 646, "arcs": 1719, "phases": 20, "states": 3350, "ms": 0.728},
+    {"method": "greedy", "transport_cost": 66.662, "shortage_penalty": 5918.963, "objective": 5985.626, "shortage_units": 24.93, "planned_units": 3203.00, "shipments": 31, "deficits": 30, "supplies": 646, "arcs": 0, "phases": 0, "states": 417, "ms": 0.131}
   ]
 }

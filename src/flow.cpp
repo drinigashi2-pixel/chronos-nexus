@@ -741,6 +741,26 @@ AllocationStats ResourceAllocator::allocate(const AllocConfig& cfg, double now, 
       if (sup[p] >= cfg_.minShipment) st.supplies++;
     }
   }
+  if (cfg.maxShipments <= 0 && P > 50000) {
+    // Trip budget exhausted on a 100k-node galaxy: enforceTripBudget() would drop every shipment,
+    // so building and solving the networks only costs time (~12 s per cycle, ~20 % of the run).
+    // Planned shortage = the whole deficit; repair() has no network until the next cycle. Smaller
+    // galaxies keep solving: there the networks let event repairs create shipments (measured on
+    // large: skipping there cost ~0.5 points).
+    for (int r = 0; r < NUM_RESOURCES; ++r) {
+      net_[r] = Net();
+      for (int p = 0; p < P; ++p) {
+        size_t k = static_cast<size_t>(p) * NUM_RESOURCES + r;
+        shortage_[k] = demand_[r][p];
+        waste_[k] = overflow_[r][p];
+        st.shortageUnits += shortage_[k];
+        st.shortagePenalty += shortage_[k] * unitPenalty(p, r);
+        st.wasteUnits += waste_[k];
+      }
+    }
+    st.ms = timer.ms();
+    return st;
+  }
   inAllocate_ = true;
   allocDl_ = dl;
   if (cfg.method == AllocMethod::MinCostFlow) {

@@ -7,9 +7,9 @@
   "alns"
  ],
  "budget_ms": 20000,
- "wall_s": 0.8692126274108887,
+ "wall_s": 1.072408676147461,
  "stats": {
-  "total_score": 69.592093,
+  "total_score": 69.566795,
   "population_survival_rate": 0.999991,
   "resources_delivered": 46601.410417,
   "resource_shortages": 89.13893,
@@ -25,9 +25,9 @@
   "states_explored": 5896213,
   "search_space_reduction_pct": 30.03196,
   "events_handled": 24,
-  "avg_replan_ms": 0.882951,
-  "total_exec_ms": 606.907453,
-  "peak_memory_mb": 16.25,
+  "avg_replan_ms": 1.411223,
+  "total_exec_ms": 940.166842,
+  "peak_memory_mb": 16.457031,
   "extra": {
    "naive_states": 8427008.9,
    "naive_routing_ratio_sampled": 8.0868,
@@ -39,9 +39,9 @@
    "missions_pending_at_end": 100,
    "proactive_missions": 474,
    "events_skipped": 0,
-   "max_replan_ms": 4.85,
-   "load_ms": 20.506,
-   "landmark_ms": 1.669,
+   "max_replan_ms": 7.224,
+   "load_ms": 50.081,
+   "landmark_ms": 2.332,
    "validation_hard_violations": 0,
    "facilities_built": 54,
    "budget_spent": 9790.0,
@@ -63,9 +63,9 @@
   }
  },
  "score": {
-  "total_score": 69.5921,
+  "total_score": 69.5668,
   "positive_part": 80.7684,
-  "negative_part": 11.1763,
+  "negative_part": 11.2016,
   "terms": {
    "population_survival": 0.999991,
    "resource_security": 0.999765,
@@ -78,7 +78,7 @@
    "risk": 0.025462,
    "waste": 0.008649,
    "energy": 0.890217,
-   "computational_cost": 0.023107
+   "computational_cost": 0.03154
   },
   "weights": {
    "population_survival": 0.3,

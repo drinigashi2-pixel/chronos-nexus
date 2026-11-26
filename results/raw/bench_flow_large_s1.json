@@ -1,7 +1,7 @@
 {
   "benchmark": "flow",
   "results": [
-    {"method": "min_cost_flow", "transport_cost": 6218.447, "shortage_penalty": 0.000, "objective": 6218.447, "shortage_units": 0.00, "planned_units": 318537.00, "shipments": 3073, "deficits": 2781, "supplies": 64727, "arcs": 168363, "phases": 51, "states": 1497320, "ms": 503.948},
-    {"method": "greedy", "transport_cost": 5987.844, "shortage_penalty": 283595.956, "objective": 289583.800, "shortage_units": 1684.15, "planned_units": 318558.00, "shipments": 3095, "deficits": 2781, "supplies": 64727, "arcs": 0, "phases": 0, "states": 38710, "ms": 27.221}
+    {"method": "min_cost_flow", "transport_cost": 6218.447, "shortage_penalty": 0.000, "objective": 6218.447, "shortage_units": 0.00, "planned_units": 318537.00, "shipments": 3073, "deficits": 2781, "supplies": 64727, "arcs": 168363, "phases": 51, "states": 1497320, "ms": 519.282},
+    {"method": "greedy", "transport_cost": 5987.844, "shortage_penalty": 283595.956, "objective": 289583.800, "shortage_units": 1684.15, "planned_units": 318558.00, "shipments": 3095, "deficits": 2781, "supplies": 64727, "arcs": 0, "phases": 0, "states": 38710, "ms": 31.959}
   ]
 }

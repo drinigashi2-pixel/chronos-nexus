@@ -17,10 +17,10 @@
 <text x="256.2" y="378" text-anchor="middle">medium</text>
 <text x="373.8" y="378" text-anchor="middle">large</text>
 <text x="491.2" y="378" text-anchor="middle">extreme</text>
-<rect x="91.8" y="294.6" width="89.3" height="65.4" fill="#2f6db3"/>
-<rect x="209.2" y="216.5" width="89.3" height="143.5" fill="#2f6db3"/>
-<rect x="326.8" y="141.4" width="89.3" height="218.6" fill="#2f6db3"/>
-<rect x="444.2" y="57.7" width="89.3" height="302.3" fill="#2f6db3"/>
+<rect x="91.8" y="299.6" width="89.3" height="60.4" fill="#2f6db3"/>
+<rect x="209.2" y="214.8" width="89.3" height="145.2" fill="#2f6db3"/>
+<rect x="326.8" y="139.8" width="89.3" height="220.2" fill="#2f6db3"/>
+<rect x="444.2" y="57.0" width="89.3" height="303.0" fill="#2f6db3"/>
 <text x="315.0" y="405" text-anchor="middle">dataset</text>
 <text transform="translate(18,205.0) rotate(-90)" text-anchor="middle">time (ms, mean over seeds)</text>
 <rect x="565" y="50" width="12" height="12" fill="#2f6db3"/>
